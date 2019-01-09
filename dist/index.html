@@ -15,6 +15,16 @@
         padding: 1em;
         margin: 1em;
       }
+      #container {
+        padding-top: 4%;
+        background-color: rgb(222, 223, 219);
+        width: 95%;
+        height: 100%;
+        margin: 0 auto;
+      }
+      button[type="button"] {
+        background-color: white;
+      }
     </style>
     <link
       rel="stylesheet"
@@ -23,16 +33,19 @@
     <title>Github Finder</title>
   </head>
   <body>
-    <form>
-      <h2>Find Github Users</h2>
-      <label for="search">Type Username</label>
-      <input type="text" name="search" />
-      <div>
-        <button type="submit" class="button-primary">Submit</button>
-        <button type="button">Clear</button>
-      </div>
-    </form>
-    <div id="root"></div>
+    <div id="container">
+      <form>
+        <h2>Find Github Users</h2>
+        <label for="search">Type Username</label>
+        <input type="text" name="search" />
+        <div>
+          <button type="submit" class="button-primary">Submit</button>
+          <button type="button">Clear</button>
+        </div>
+      </form>
+
+      <div id="root"></div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
